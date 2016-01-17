@@ -1,28 +1,82 @@
 body {
-  background-color: rgba(25,80,0,0.4);
-
+  background-color: #5D9CEC;
+  color: #fbf7ea;
+  text-shadow: 1px 0px 3px black, -1px 0px 3px black;
 }
 
 a, a:hover, a:active, a:visited {
   text-decoration: none;
+  color: #fbf7ea;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+#random {
   color: black;
+}
+
+button {
+  margin-top: 12px;
+  border: 2px solid #4A89ff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e0e0e0;
+  border-radius: 4px;
 }
 
 #headings {
   text-align: center;
   font-family: 'Chela One', cursive;
 }
-#searchBar {
+
+footer {
+  text-align: center;
+  font-family: 'Chela One', cursive;
+}
+
+#searchText {
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
-  border: 3px solid #ff8700;
-  padding-left: 5px;
-  height: 1.5em;
+  border: 3px solid #4A89ff;
+  padding-left: 8px;
+  height: 2em;
   outline: none;
+  background-color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 1px 0px 1px black, -1px 0px 1px black;
 }
 
+.wikiEntry {
+  border: 2px dashed #4A89ff;
+  border-radius: 12px;
+  margin-top: 12px;
+  display: none;
+  color: black;
+  text-shadow: none;
+  background-color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.wikiEntry:hover {
+  background-color: #606a8e;
+  color: #e0e0e0;
+  border: 2px solid #606a8e;
+}
+
+.wikiSnippet {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.wikiTitle {
+  margin-left: 12px;
+}
+
+#results {
+  margin-top: 25px;
+}
 
 #formBlock, #formBlock:visited, #formBlock:active {
   outline: none;
@@ -33,9 +87,3 @@ a, a:hover, a:active, a:visited {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.flex-item {
-
-}
-
-/*TODO Style search entries*/

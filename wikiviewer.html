@@ -3,57 +3,67 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>WikiSearch App</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Chela+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <div id="headings">
     <h1>Wikipedia Search</h1>
-    <h4>A <a href="http://freecodecamp.com" target="_blank">FreeCodeCamp.com</a> Project</h4>
-  </div>
 
-  <div class="flex-container">
     <div class="flex-item">
-      <form action="#" id="formBlock" method="post">
-        <input type="text" name="searchBar" id="searchBar" onsubmit="return queryWiki()"/>
+      <form>
+        <input type="search" name="searchB" id="searchText" value="">
       </form>
     </div>
+
+    <button class="randomPg"><a id="random" href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Surprise Me!</a></button>
+  </div>
+
+
+
+  <div class="flex-container">
+
     <div id="results">
       <a href="" target="_blank">
-        <div id="r1"></div>
+        <div class="wikiEntry" id="r1"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r2"></div>
+        <div class="wikiEntry" id="r2"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r3"></div>
+        <div class="wikiEntry" id="r3"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r4"></div>
+        <div class="wikiEntry" id="r4"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r5"></div>
+        <div class="wikiEntry" id="r5"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r6"></div>
+        <div class="wikiEntry" id="r6"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r7"></div>
+        <div class="wikiEntry" id="r7"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r8"></div>
+        <div class="wikiEntry" id="r8"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r9"></div>
+        <div class="wikiEntry" id="r9"></div>
       </a>
       <a href="" target="_blank">
-        <div id="r10"></div>
+        <div class="wikiEntry" id="r10"></div>
       </a>
     </div>
   </div>
+
+  <footer>
+    <h4>A <a href="http://freecodecamp.com" target="_blank">FreeCodeCamp.com</a> Project</h4>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="scripts/wikiviewer.js"></script>
 </body>
